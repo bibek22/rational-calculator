@@ -39,7 +39,7 @@ int main() {
                 z = productRat(x, reciRat(y));
                 break;
             case 'd':
-                printf("%.4f", deciRat(x));
+                printf("%.4f\n", deciRat(x));
                 z = x;
                 break;
             case 'i':
@@ -105,6 +105,9 @@ rational reciRat(rational x){
 }
 
 int gcd(int x, int y){
+    /* computes greatest common divider of 
+     * x and y
+     */
     int i, min, max;
     if (x<y){
         min = x;
